@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGAPP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AGAPP</h1>
+        <div id="user-list">
+            <h3>Bağlı Kullanıcılar</h3>
+            <ul id="users"></ul>
+        </div>
+        <div id="controls">
+            <button id="start-call" onclick="startCall()">Aramayı Başlat</button>
+            <button id="end-call" onclick="endCall()" disabled>Aramayı Sonlandır</button>
+            <p id="status">Durum: Bekliyor...</p>
+        </div>
+        <div id="chat">
+            <ul id="messages"></ul>
+            <input type="text" id="message-input" placeholder="Mesaj yaz...">
+            <button onclick="sendMessage()">Gönder</button>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+</body>
+</html>

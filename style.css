@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+}
+
+h1 {
+    color: #333;
+}
+
+#user-list {
+    margin-top: 20px;
+}
+
+#users {
+    list-style: none;
+    padding: 0;
+}
+
+#users li {
+    padding: 5px;
+    background-color: #e0e0e0;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+#end-call {
+    background-color: #f44336;
+}
+
+#chat {
+    margin-top: 20px;
+}
+
+#messages {
+    list-style: none;
+    padding: 0;
+    height: 100px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+#messages li {
+    margin: 5px 0;
+}
+
+#message-input {
+    width: 70%;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+#status {
+    margin-top: 10px;
+    color: #555;
+}
