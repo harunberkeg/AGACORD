@@ -22,7 +22,7 @@ function createWindow() {
         }
     });
 
-    mainWindow.loadURL('https://agapp-h0oe.onrender.com');
+    mainWindow.loadURL('https://agacord.onrender.com');
     mainWindow.webContents.openDevTools(); // Hata ayıklama için
 }
 
